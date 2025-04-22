@@ -1,0 +1,3 @@
+project_name: glyphra
+builds:
+  - main: ./main.go

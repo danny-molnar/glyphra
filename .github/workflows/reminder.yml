@@ -1,0 +1,17 @@
+name: Weekly Reminder
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'
+
+jobs:
+  reminder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send reminder
+        uses: peter-evans/create-issue-comment@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: 1
+          body: |
+            🔔 Weekly check-in! What's the latest progress on Glyphra?
