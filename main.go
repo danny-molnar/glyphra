@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"github.com/danny-molnar/glyphra/cmd"
+)
 
 func main() {
-    fmt.Println("Welcome to Glyphra!")
+	cmd.Execute()
 }
