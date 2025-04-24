@@ -2,3 +2,10 @@ title: Glyphra Dev Blog
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-include-cache
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
